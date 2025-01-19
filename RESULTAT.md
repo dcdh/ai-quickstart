@@ -3,6 +3,13 @@
 Question :
 Quel est le nom de famille d'Eugénie, l'héroïne du livre "la philosophie dans le boudoir" du marquis de Sade ?
 
+## Sample
+
+```shell
+echo "Quel est le nom de famille d'Eugénie, l'héroïne du livre \"la philosophie dans le boudoir\" du marquis de Sade ?\n\nAnswer using the following information:Mme de Saint-Ange : On la nomme Eugénie, elle est la fille d’un certain Mistival, l’un des plus riches traitants de la capitale, âgé d’environ trente-six ans ; la mère en a tout au plus trente-deux, et la petite fille quinze. Mistival est aussi libertin que sa femme est dévote. Pour Eugénie, ce serait en vain, mon ami, que j’essaierais de te la peindre : elle est au-dessus de mes pinceaux, qu’il te suffise d’être convaincu que ni toi, ni moi n’avons certainement jamais vu rien d’aussi délicieux au monde." | xargs ollama run llama3.2:latest
+```
+> Le nom de famille d'Eugénie dans le livre "La Philosophie dans le boudoir" du marquis de Sade est Mistival.
+
 ## Sans ingestion
 
 ### log-requests
