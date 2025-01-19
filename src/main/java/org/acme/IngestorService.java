@@ -38,8 +38,10 @@ public class IngestorService {
     void onStart(@Observes final StartupEvent ev) {
         this.managedExecutor.runAsync(() -> {
             // read
+            // La version PDF est mal supportée. Beaucoup de contenu sont manquants, des erreurs d'encodages...
+            // J'ai repris une version clean pour la transformer directement en txt
             final InputStream inputStream = getClass().getClassLoader()
-                    .getResourceAsStream("sade_marquis_de_-_la_philosophie_dans_le_boudoir.pdf");
+                    .getResourceAsStream("sade_marquis_de_-_la_philosophie_dans_le_boudoir.txt");
             final Document document = parser.parse(inputStream);
             // ingest
             final EmbeddingStoreIngestor ingestor = EmbeddingStoreIngestor.builder()

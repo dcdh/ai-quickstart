@@ -33,3 +33,9 @@ PGPASSWORD=quarkus psql -U quarkus quarkus
 \d embeddings
 
 SELECT * FROM embeddings;
+
+SELECT COUNT(*) FROM embeddings;
+
+SELECT COUNT(*) FROM embeddings WHERE text LIKE '%Mistival%';
+
+SELECT text FROM embeddings WHERE text LIKE '%Mistival%' LIMIT 1;
