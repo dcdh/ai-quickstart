@@ -80,17 +80,17 @@ SELECT COUNT(*) FROM embeddings;
 ```json
 {
   "model" : "llama3.2:latest",
-  "created_at" : "2025-01-18T21:50:46.324035152Z",
+  "created_at" : "2025-01-19T09:18:07.655146426Z",
   "message" : {
     "role" : "assistant",
     "content" : "L'héroïne du livre \"la philosophie dans le boudoir\" du marquis de Sade est Eugénie de Courval, également connue sous le nom d'Eugénie."
   },
   "done_reason" : "stop",
   "done" : true,
-  "total_duration" : 12590296314,
-  "load_duration" : 7429752621,
+  "total_duration" : 12562799103,
+  "load_duration" : 7409968525,
   "prompt_eval_count" : 592,
-  "prompt_eval_duration" : 3813000000,
+  "prompt_eval_duration" : 3805000000,
   "eval_count" : 44,
   "eval_duration" : 1346000000
 }
@@ -111,8 +111,6 @@ SELECT COUNT(*) FROM embeddings;
 SELECT COUNT(*) FROM embeddings;
 -- 1083
 ```
-
-### First run
 
 #### log-requests
 
@@ -137,64 +135,18 @@ SELECT COUNT(*) FROM embeddings;
 ```json
 {
   "model" : "llama3.2:latest",
-  "created_at" : "2025-01-18T22:15:29.261097695Z",
+  "created_at" : "2025-01-19T09:38:53.055298242Z",
   "message" : {
     "role" : "assistant",
     "content" : "L'héroïne du livre \"la philosophie dans le boudoir\" du marquis de Sade est Isabelle de Merteuil."
   },
   "done_reason" : "stop",
   "done" : true,
-  "total_duration" : 2551570027,
-  "load_duration" : 22501471,
+  "total_duration" : 2546863409,
+  "load_duration" : 24392624,
   "prompt_eval_count" : 261,
-  "prompt_eval_duration" : 214000000,
+  "prompt_eval_duration" : 213000000,
   "eval_count" : 32,
-  "eval_duration" : 2313000000
-}
-```
-
-
-
-
-### Second run
-
-J'ai dû faire un saut de ligne à la fin pour que la relance effectue une nouvelle requête.
-
-#### log-requests
-
-```json
-{
-  "model" : "llama3.2:latest",
-  "messages" : [ {
-    "role" : "user",
-    "content" : "Réponds-moi en une seule phrase. Quel est le nom de l'héroïne du livre \"la philosophie dans le boudoir\" du marquis de Sade ?\n\n\nAnswer using the following information:\nmande maintenant si elle est bien juste, la loi qui ordonne à celui qui n’a\nrien de respecter celui qui a tout.Quels sont les éléments du pacte social ?\nNe consiste-t-il pas à céder un peu de sa liberté et de ses propriétés pour\nassurer et maintenir ce que l’on conserve de l’un et de l’autre ?\n\nlieu que le père l’a sollicité ; le père a donc voulu notre naissance, pendant\nque la mère n’a fait qu’y consentir.Quelle différence pour les sentiments !\n\nà cette férocité où certaines femmes sont naturellement entraînées, mais\ncela est faible et souvent beaucoup trop loin du besoin qu’elles ont de\nfaire pis. Il y aurait, sans doute, d’autres moyens par lesquels une femme,\nà la fois sensible et féroce, pourrait calmer ses fougueuses passions, mais\nils sont dangereux, Eugénie, et je n’oserais jamais te les conseiller… Oh !\nciel ! qu’avez-vous donc, cher ange ?…Madame, dans quel état voilà votre\nélève !…"
-  } ],
-  "options" : {
-    "temperature" : 0.0,
-    "top_k" : 40,
-    "top_p" : 0.9
-  },
-  "stream" : false
-}
-```
-
-#### log-responses
-
-```json
-{
-  "model" : "llama3.2:latest",
-  "created_at" : "2025-01-18T22:17:44.584357649Z",
-  "message" : {
-    "role" : "assistant",
-    "content" : "Je suis désolé, mais l'héroïne du livre \"la philosophie dans le boudoir\" du marquis de Sade n'est pas explicitement mentionnée dans le texte fourni. Le texte semble être une citation ou un extrait d'un dialogue, mais il ne contient pas d'information sur l'héroïne du livre."
-  },
-  "done_reason" : "stop",
-  "done" : true,
-  "total_duration" : 4045679413,
-  "load_duration" : 18856609,
-  "prompt_eval_count" : 332,
-  "prompt_eval_duration" : 254000000,
-  "eval_count" : 77,
-  "eval_duration" : 3772000000
+  "eval_duration" : 2308000000
 }
 ```

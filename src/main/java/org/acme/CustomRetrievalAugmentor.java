@@ -19,7 +19,6 @@ public class CustomRetrievalAugmentor implements Supplier<RetrievalAugmentor> {
         final EmbeddingStoreContentRetriever contentRetriever = EmbeddingStoreContentRetriever.builder()
                 .embeddingModel(embeddingModel)
                 .embeddingStore(store)
-                .maxResults(3)
                 .build();
         augmentor = DefaultRetrievalAugmentor
                 .builder()
